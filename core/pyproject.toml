@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "core"
+version = "0.1.0"
+description = ""
+authors = ["My Bui <my.bui.fi@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cassandra-driver = "^3.25.0"
+pydantic = "^1.9.1"
+Unidecode = "^1.3.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.961"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

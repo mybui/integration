@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "webflow_integration"
+version = "0.1.0"
+description = ""
+authors = ["My Bui <my.bui.fi@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cassandra-driver = "^3.25.0"
+python-dotenv = "^0.20.0"
+pydantic = "^1.9.1"
+Webflowpy = "^0.0.5"
+colorama = "^0.4.4"
+core = {path = "../core", develop = true}
+validators = "^0.20.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^4.0.1"
+mypy = "^0.960"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
